@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    
+  }
+  
+header{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h1 {
+    background-color: #014F86
+    ;
+    color: white;
+    font-family: 'Pacifico';
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+}
+main{
+    background-color: white;
+    margin: 40px 10px;
+    display: grid;
+    grid-template:
+    "left-sec cent-sec right-sec" 1fr/
+    1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+    /* height: 100vh;
+    width: 100vw; */
+    
+}
+h2 {
+    color: #013a63;
+    font-family: sans-serif;
+    background-color: white;
+    padding: 10px 0;
+    text-align: justify;
+    font-size: 30px;
+   
+}
+.left-sec {
+    grid-area: left-sec;
+    
+    
+  
+}
+.cent-sec{
+    grid-area: cent-sec;
+    
+    
+}
+.right-sec{
+    grid-area: right-sec;
+    
+    
+}
+.left-textbox1,
+.left-textbox2,
+.left-textbox3,
+.cent-textbox1,
+.cent-textbox2,
+.right-textbox1,
+.right-textbox2 {
+    outline: solid #014F86 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+    
+}
+
+.cent-textbox1,
+.cent-textbox2 {
+    background-color: rgba(1, 58, 99, 0.8);
+    color: rgb(233, 225, 225);
+}
+.author,
+.date{
+    text-align: end;
+    text
+}
+.inside-item{
+    display: grid;
+    grid-template-columns: 25px  1fr;
+    
+    grid-gap: 25px;
+    justify-content:start;
+    
+    
+}
+
+.inside-item img {
+    outline: solid #014F86 1px;
+    align-content: start;
+    text-align: justify;
+    
+}
+
+img {
+    border-radius: 50px;
+}
+
+li {
+    padding-top: 5px;
+}
+
+.text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+span {
+    text-transform: uppercase;
+    color: #014F86;
+}
+
+.cent-sec span {
+    color: white;
+}
+.date{
+    color: #014F86;
+}
+.cent-sec .date {
+    color: white;
+}
